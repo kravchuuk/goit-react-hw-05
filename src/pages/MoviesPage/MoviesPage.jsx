@@ -18,12 +18,11 @@ export default function MoviesPage() {
   const query = searchParams.get("search");
 
   useEffect(() => {
-    if (!query) {
-      setMovies([]);
-      return;
-    }
-
     const fetchData = async () => {
+      if (!query) {
+        setMovies([]);
+        return; // Виходимо з функції, якщо параметр search порожній або не визначений
+      }
       setIsLoading(true);
       try {
         const data = await searchMovie(query);
