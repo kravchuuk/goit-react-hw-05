@@ -1,0 +1,25 @@
+.navi {
+  display: flex;
+  gap: 15px;
+  font-size: 24px;
+  padding: 10px;
+  margin: 0;
+  background-color: rgb(216, 186, 141);
+  margin-bottom: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+  color: blueviolet;
+}
+
+.active {
+  color: rgb(70, 29, 14);
+}

@@ -1,0 +1,38 @@
+.div {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgb(170, 142, 72);
+  padding-bottom: 10px;
+}
+
+.imgWrap {
+  margin-left: 10px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.itemTitle {
+  font-size: 16px;
+  color: rgb(179, 132, 14);
+  width: 110px;
+  /* text-align: right; */
+}
+
+.infoWrap {
+  border-bottom: 1px solid rgb(170, 142, 72);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.infoTitle {
+  font-size: 16px;
+  color: rgb(179, 132, 14);
+  margin-bottom: 15px;
+}
+
+.infoItem {
+  font-size: 16px;
+}

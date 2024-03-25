@@ -1,0 +1,28 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.item {
+  width: 180px;
+  padding: 5px;
+  border: 1px solid rgb(71, 69, 69);
+  background-color: rgb(163, 141, 84);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+}
+
+.img {
+  border-radius: 10px;
+  margin-bottom: auto;
+}
+
+.title {
+  color: rgb(233, 211, 155);
+  font-size: 14px;
+}
