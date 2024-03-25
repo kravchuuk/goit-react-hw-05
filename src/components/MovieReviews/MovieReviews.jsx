@@ -24,11 +24,12 @@ export default function MovieReviews() {
     }
     getReview();
   }, [movieId]);
+
   return (
     <>
       {isLoading && <Loader />}
       {error && <div>Something went wrong. Try reload</div>}
-      {reviews && reviews.length > 0 && (
+      {reviews && reviews.length > 0 ? (
         <ul className={css.list}>
           {reviews.map(({ id, author, content }) => (
             <li className={css.item} key={id}>
@@ -37,6 +38,8 @@ export default function MovieReviews() {
             </li>
           ))}
         </ul>
+      ) : (
+        <div>No reviews available.</div>
       )}
     </>
   );

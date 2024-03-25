@@ -33,7 +33,7 @@ export default function MovieCast() {
     <>
       {isLoading && <Loader />}
       {error && <div>Something went wrong. Try reload</div>}
-      {info && info.length > 0 && (
+      {info && info.length > 0 ? (
         <ul className={css.list}>
           {info.map(({ cast_id, character, name, profile_path }) => (
             <li className={css.item} key={cast_id}>
@@ -53,6 +53,8 @@ export default function MovieCast() {
             </li>
           ))}
         </ul>
+      ) : (
+        <div>No cast information available.</div>
       )}
     </>
   );
